@@ -8,14 +8,14 @@ My goals with this are to
 1) be a silly goose
 2) test out my newfound confidence with coding
 3) learn about how Medusa works
-4) experiment with some ideas that you might consider dumber (and therefore likely slower) 
+4) experiment with some ideas that you might consider dumber (and therefore likely slower) than medusa
 5) i'll likely post a video about this along with my general breakdown of how actual medusa works over on [my YT channel](https://www.youtube.com/channel/UCeQhm8DwHBg_YEYY0KGM1GQ) after i've either finished or given up on Euryale
 
 ## Stheno
 
 the one working right now. basically a greedy decoding oversimplified version of one of Medusa's basic ideas
-Rn i've seen a 1.33x speed increase over regular next-token prediction decoding. I think this could easily be a lot faster if I remove all the print statements, generally optimize my code, and use a bigger model with more snake heads. Thinking if I do that it'll be in a separate jupyter notebook just so i can keep the main one working for teaching purposes
+Rn i've seen a ~1.33-1.5x speed increase over regular next-token prediction decoding. However the greedy decoding aspect is a huge bummer bc it makes the text too repetitive. After I solve that problem in Euryale I might port the solution back to Stheno. If I do I also plan to retrain another model with more heads for Stheno to use.
 
 ## Euryale
 
-haven't yet started, but basically I think i have a clever way to take advantage of batch decoding. Small chance this is actually quicker than actual Medusa, although it'll definitely be more memory intensive. 
+basically I think i have a clever way to take advantage of batch decoding. Small chance this is actually quicker than actual Medusa, although it'll definitely be more memory intensive. so far i've made a little v1 that's still way too susceptible to greedy decoding like Stheno, but i might have an idea on how to get around that. If I can't, then oh well i did say they were the uglier sisters after all
